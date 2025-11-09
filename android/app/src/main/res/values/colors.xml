@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores para la app -->
+    <color name="turquoise">#00d6d6</color>
+    <color name="btn_green">#00e676</color>
+    <color name="btn_cyan">#03DAC5</color>
+</resources>

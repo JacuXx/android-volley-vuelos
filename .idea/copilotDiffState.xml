@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/GUIA_RESOLVER_ERROR.md">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/GUIA_RESOLVER_ERROR.md" />
+              <option name="originalContent" value="&#10;" />
+              <option name="updatedContent" value="# Guía para Resolver Error Non-Fast-Forward&#10;&#10;##  Error: &quot;non-fast-forward&quot;&#10;&#10;Este error ocurre cuando el repositorio remoto tiene commits que tu repositorio local no tiene.&#10;&#10;##  Soluciones Automáticas (EJECUTA UNA DE ESTAS)&#10;&#10;### ⭐ Opción 1: SOLUCIÓN DEFINITIVA (Recomendada)&#10;```&#10;Ejecuta: SOLUCION_DEFINITIVA.bat&#10;```&#10;- Más segura y completa&#10;- Hace backup automático&#10;- Maneja conflictos automáticamente&#10;&#10;### ⚡ Opción 2: SOLUCIÓN RÁPIDA  &#10;```&#10;Ejecuta: SOLUCION_RAPIDA.bat&#10;```&#10;- Más rápida y directa&#10;- Usa reset suave&#10;- Ideal para casos simples&#10;&#10;##  Comandos Manuales (Si prefieres hacerlo paso a paso)&#10;&#10;### Método 1: Pull y Merge&#10;```cmd&#10;cd &quot;C:\Users\alane\AndroidStudioProjects\vuelos&quot;&#10;git fetch origin main&#10;git pull origin main --allow-unrelated-histories --no-edit&#10;git add .&#10;git commit -m &quot;Merge remote changes&quot;&#10;git push origin main&#10;```&#10;&#10;### Método 2: Reset y Force Push&#10;```cmd&#10;cd &quot;C:\Users\alane\AndroidStudioProjects\vuelos&quot;&#10;git fetch origin main&#10;git reset --soft origin/main&#10;git add .&#10;git commit -m &quot;Proyecto completo: Android + Backend PHP&quot;&#10;git push origin main&#10;```&#10;&#10;### Método 3: Force Push (ÚLTIMA OPCIÓN)&#10;```cmd&#10;git push --force-with-lease origin main&#10;```&#10;&#10;## ✅ Verificar Resultado&#10;&#10;Después de cualquier solución, verifica en:&#10;https://github.com/JacuXx/android-volley-vuelos.git&#10;&#10;##  Lo Que Verás en GitHub&#10;&#10;Tu repositorio tendrá:&#10;-  Aplicación Android completa&#10;-  Backend PHP (consulta.php, registro.php, formulario.html)  &#10;- ️ Scripts de base de datos (crear_tabla.sql)&#10;-  Documentación (README.md)&#10;&#10;##  Qué Hacer Después&#10;&#10;1. ✅ Verifica que todos tus archivos estén en GitHub&#10;2. ✅ Configura tu servidor web para el backend PHP&#10;3. ✅ Actualiza URLs en Android Studio para conectar con tu servidor&#10;4. ✅ Importa el proyecto Android desde la nueva estructura&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/SOLUCION_DEFINITIVA.bat">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/SOLUCION_DEFINITIVA.bat" />
+              <option name="updatedContent" value="@echo off&#10;echo ===============================================&#10;echo    RESOLVIENDO ERROR NON-FAST-FORWARD FINAL&#10;echo ===============================================&#10;echo.&#10;&#10;cd /d &quot;C:\Users\alane\AndroidStudioProjects\vuelos&quot;&#10;&#10;echo [PASO 1] Verificando configuracion de Git...&#10;git config --global user.email &gt;nul 2&gt;&amp;1&#10;if errorlevel 1 (&#10;    echo Configurando usuario de Git...&#10;    set /p email=&quot;Ingresa tu email de GitHub: &quot;&#10;    set /p name=&quot;Ingresa tu nombre: &quot;&#10;    git config --global user.email &quot;%email%&quot;&#10;    git config --global user.name &quot;%name%&quot;&#10;)&#10;&#10;echo [PASO 2] Estado actual:&#10;git status&#10;&#10;echo.&#10;echo [PASO 3] Obteniendo informacion del repositorio remoto...&#10;git fetch origin main&#10;&#10;echo.&#10;echo [PASO 4] Haciendo backup de cambios locales...&#10;git stash push -m &quot;Backup antes de merge&quot;&#10;&#10;echo.&#10;echo [PASO 5] Descargando y fusionando cambios remotos...&#10;git pull origin main --allow-unrelated-histories --strategy=ours&#10;&#10;echo.&#10;echo [PASO 6] Restaurando tus cambios...&#10;git stash pop&#10;&#10;echo.&#10;echo [PASO 7] Agregando todos los archivos...&#10;git add .&#10;&#10;echo.&#10;echo [PASO 8] Haciendo commit de la fusion...&#10;git commit -m &quot;Merge: Integrar repositorio remoto con proyecto local completo&quot;&#10;&#10;echo.&#10;echo [PASO 9] Subiendo a GitHub...&#10;git push origin main&#10;&#10;if errorlevel 1 (&#10;    echo.&#10;    echo Push normal fallo. Usando force-with-lease como respaldo...&#10;    git push --force-with-lease origin main&#10;)&#10;&#10;echo.&#10;echo ===============================================&#10;echo               ¡COMPLETADO!&#10;echo ===============================================&#10;echo.&#10;echo Tu proyecto esta ahora en GitHub:&#10;echo https://github.com/JacuXx/android-volley-vuelos.git&#10;echo.&#10;echo Estructura subida:&#10;echo - Aplicacion Android completa&#10;echo - Backend PHP (consulta.php, registro.php, etc.)&#10;echo - Scripts de base de datos&#10;echo - Documentacion completa&#10;echo.&#10;pause" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/SOLUCION_RAPIDA.bat">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/SOLUCION_RAPIDA.bat" />
+              <option name="updatedContent" value="@echo off&#10;echo Solucion rapida para non-fast-forward...&#10;&#10;cd /d &quot;C:\Users\alane\AndroidStudioProjects\vuelos&quot;&#10;&#10;REM Metodo 1: Reset y force push (MAS DIRECTO)&#10;echo Creando backup de tu trabajo...&#10;git branch backup-local&#10;&#10;echo Descargando version remota...&#10;git fetch origin main&#10;&#10;echo Haciendo reset suave...&#10;git reset --soft origin/main&#10;&#10;echo Agregando todos tus archivos...&#10;git add .&#10;&#10;echo Creando commit final...&#10;git commit -m &quot;Proyecto completo: Android + Backend PHP + Database&quot;&#10;&#10;echo Subiendo a GitHub...&#10;git push origin main&#10;&#10;echo.&#10;echo ¡LISTO! Tu proyecto esta en GitHub.&#10;echo Backup guardado en rama 'backup-local' por seguridad.&#10;pause" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/fix_fast_forward.bat">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/fix_fast_forward.bat" />
+              <option name="updatedContent" value="@echo off&#10;echo Resolviendo error non-fast-forward...&#10;echo.&#10;&#10;cd /d &quot;C:\Users\alane\AndroidStudioProjects\vuelos&quot;&#10;&#10;REM Opcion 1: Pull y merge&#10;echo Opcion 1: Intentando pull y merge...&#10;git pull origin main --allow-unrelated-histories --no-edit&#10;&#10;if errorlevel 1 (&#10;    echo.&#10;    echo Pull con conflictos. Resolviendo...&#10;    git add .&#10;    git commit -m &quot;Merge remote changes&quot;&#10;)&#10;&#10;echo.&#10;echo Haciendo push...&#10;git push origin main&#10;&#10;if errorlevel 1 (&#10;    echo.&#10;    echo Push normal fallo. Intentando con force-with-lease...&#10;    git push --force-with-lease origin main&#10;)&#10;&#10;echo.&#10;echo ¡Resuelto! Verifica en: https://github.com/JacuXx/android-volley-vuelos.git&#10;pause" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resolver_error_final.bat">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/resolver_error_final.bat" />
+              <option name="updatedContent" value="@echo off&#10;echo ===============================================&#10;echo      SOLUCIONANDO ERROR NON-FAST-FORWARD&#10;echo ===============================================&#10;echo.&#10;&#10;cd /d &quot;C:\Users\alane\AndroidStudioProjects\vuelos&quot;&#10;&#10;echo [1/5] Estado actual del repositorio:&#10;git status&#10;&#10;echo.&#10;echo [2/5] Obteniendo cambios del repositorio remoto...&#10;git fetch origin&#10;&#10;echo.&#10;echo [3/5] Haciendo pull con merge de historiales no relacionados...&#10;git pull origin main --allow-unrelated-histories --no-edit&#10;&#10;if errorlevel 1 (&#10;    echo.&#10;    echo Se detectaron conflictos. Resolviendo automaticamente...&#10;    echo [4/5] Agregando todos los archivos resueltos...&#10;    git add .&#10;    git commit -m &quot;Merge: Resolver conflictos entre local y remoto&quot;&#10;) else (&#10;    echo [4/5] Pull completado sin conflictos.&#10;)&#10;&#10;echo.&#10;echo [5/5] Haciendo push final...&#10;git push origin main&#10;&#10;echo.&#10;echo ===============================================&#10;echo           PROBLEMA RESUELTO&#10;echo ===============================================&#10;echo.&#10;echo Tu proyecto ya deberia estar en GitHub!&#10;echo URL: https://github.com/JacuXx/android-volley-vuelos.git&#10;echo.&#10;pause" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

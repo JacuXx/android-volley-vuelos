@@ -1,0 +1,61 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Android específico
+android/local.properties
+android/build/
+android/app/build/
+android/.gradle/
+
+# PHP Backend
+*.log
+tmp/
+temp/
+cache/
+vendor/
+.env
+config.php
+conexion.php
+
+# Base de datos
+*.db
+*.sqlite
+*.sqlite3
+*.sql.backup
+dump.sql
+
+# Archivos sensibles
+passwords.txt
+.htpasswd
+credentials.txt
+
+# IDE y editores
+.vscode/
+*.swp
+*.swo
+*~
+
+# Archivos temporales y logs
+logs/
+*.log
+*.backup
+*.bak
+*.orig
+
+# OS específico
+Thumbs.db
+ehthumbs.db
+

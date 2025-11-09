@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">vuelos</string>
+    <string name="hint_id">Id</string>
+    <string name="hint_origin">Origen</string>
+    <string name="hint_destination">Destino</string>
+    <string name="btn_save">SALVAR RUTA</string>
+    <string name="btn_consult">CONSULTAR</string>
+</resources>
